@@ -4,5 +4,5 @@ services:
     name: django-app
     env: python
     buildCommand: pip install -r flipcart_ecom/requirements.txt
-    startCommand:  python -m gunicorn flipcart_ecom.asgi:application -k uvicorn.workers.UvicornWorker
+    startCommand: gunicorn flipcart_ecom.wsgi:application --chdir flipcart_ecom
     plan: free

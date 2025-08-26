@@ -4,5 +4,5 @@ services:
     name: django-app
     env: python
     buildCommand: pip install -r flipcart_ecom/requirements.txt
-    startCommand: PYTHONPATH=. gunicorn flipcart_ecom/flipcart_ecom.wsgi:application
+    startCommand: python -m gunicorn flipcart_ecom.wsgi:application
     plan: free

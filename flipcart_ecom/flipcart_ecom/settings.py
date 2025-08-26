@@ -86,7 +86,13 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+import dj_database_url
+DATABASES = {
+    'default': dj_database_url.config(
+        default='postgresql://wecart_ecom_image_user:JSeICXxfCN6GfHGnIezCKv3XEG69ghnI@dpg-d2msif8gjchc73d2mhdg-a/wecart_ecom_image',
+        conn_max_age=1000
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

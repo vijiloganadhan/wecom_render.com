@@ -98,7 +98,7 @@ import dj_database_url
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        default='postgresql://wecart_ecom_image_user:JSeICXxfCN6GfHGnIezCKv3XEG69ghnI@dpg-d2msif8gjchc73d2mhdg-a.oregon-postgres.render.com/wecart_ecom_image',
         conn_max_age=600
     )
 }

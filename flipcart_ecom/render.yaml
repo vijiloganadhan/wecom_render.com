@@ -3,6 +3,6 @@ services:
   - type: web
     name: django-app
     env: python
-    buildCommand: pip install -r flipcart_ecom/requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn flipcart_ecom.wsgi:application --chdir flipcart_ecom
     plan: free
